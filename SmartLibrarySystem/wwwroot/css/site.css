@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    height: 85px;
+    width: 100%;
+}
+
+h1 {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    line-height: 80px;
+    background-image: url('img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.logo {
+    position: absolute;
+    left: 100px;
+    width: 85px;
+    height: 85px;
+    top: 0px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+    header a:hover {
+        text-decoration: underline;
+    }
+
+header li {
+    display: inline;
+    margin-right: 2vw;
+}
+
+header ul {
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+
+main {
+    height: 100vh;
+    background-image: url('../img/uts.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    filter: brightness(80%);
+}
+
+h2 {
+    position: absolute;
+    left: 190px;
+    text-align: left;
+    font-size: 15px;
+    font-style: normal;
+    color: #ffffff;
+    top: 15px;
+}
+
+.newsletter input, .newsletter {
+    background-color: transparent;
+    color: white;
+    border: 1px background-color rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.newsletter {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+}
+
+    .newsletter input {
+        width: 300px;
+        margin-right: 10px;
+    }
+
+    .newsletter button {
+        width: 90px;
+        cursor: pointer;
+        height: 30px;
+    }
+
+input::placeholder {
+    color: white
+}
+
+input:focus {
+    outline: none;
+    border-color: black
+}
+
+.result h3 {
+    text-align: center;
+    color: #ffffff;
+    -webkit-text-stroke: white 1px;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0,0.5);
+}
+
+.book {
+    display: inline;
+    margin-top: 0.5px;
+}
+
+    .book img {
+        height: 200px;
+        width: 200px;
+        margin: 20px;
+    }
+
+.books {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.book a {
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.result {
+    margin-top: 200px;
+}
+
+.letter input, .letter {
+    background-color: transparent;
+    color: black;
+    border: 1px background-color rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.letter {
+    padding: 15px 0; /* 上下填充为15像素 */
+    display: flex; /* 使用弹性布局 */
+    flex-direction: column; /* 设置为列方向 */
+    align-items: center; /* 项目在交叉轴上的对齐方式 */
+    position: absolute; /* 设置为绝对定位 */
+    bottom: 0; /* 相对于父元素底部定位 */
+    left: 50%; /* 相对于父元素左侧定位 */
+    transform: translateX(-50%); /* 使容器水平居中 */
+}
+
+    .letter p {
+        margin-top: auto; /* 将段落元素向下推到容器的底部 */
+    }
+
+    .letter input {
+        width: 300px;
+        margin-right: 10px;
+    }
+
+    .letter button {
+        width: 90px;
+        cursor: pointer;
+        height: 30px;
+    }
+
+input::placeholder {
+    color: black
+}
+
+input:focus {
+    outline: none;
+    border-color: black
+}
+
+.letter {
+    background-color: #ffffff;
+}
