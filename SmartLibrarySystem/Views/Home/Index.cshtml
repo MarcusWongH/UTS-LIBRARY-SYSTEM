@@ -1,71 +1,58 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UTS SMART LIBRARY</title>
-    <link rel="stylesheet" href="~/css/site.css">
-</head>
-<body>
-    <main>
-        <section class="newsletter">
+<main>
+    <section class="newsletter">
+        <form>
+            <input type="text" placeholder="search by title or author" required>
+            <button type="submit">search</button>
+        </form>
+    </section>
+    <dic>
+
+        <div class="letter">
             <form>
-                <input type="title or author" placeholder="search by title or author" required>
+                <input type="text" placeholder="MESSAGE LIBRARY SYSTEM..." required>
                 <button type="submit">search</button>
             </form>
-        </section>
-        <dic>
+        </div>
+        <div class="result">
+            <h3>TOP INTERESTING</h3>
+            <div class="books">
 
-            <div class="letter">
-                <form>
-                    <input type="title or author" placeholder="MESSAGE LIBRARY SYSTEM..." required>
-                    <button type="submit">search</button>
-                </form>
-                </section>
-            </div>
-            <div class="result">
-                <h3>TOP INTERESTING</h3>
-                <div class="books">
+                <div class="book">
+                    <a href="">
 
-                    <div class="book">
-                        <a href="">
+                        <img src="./img/control.jpg">
+                        <p>
+                            Think For Yourself:<br>
+                            Control Your Life
+                        </p>
+                    </a>
 
-                            <img src="./img/control.jpg">
-                            <p>
-                                Think For Yourself:<br>
-                                Control Your Life
-                            </p>
-                        </a>
-
-                    </div>
-                    <div class="book">
-                        <a href="">
+                </div>
+                <div class="book">
+                    <a href="">
 
 
-                            <img src="./img/introduction.jpg">
-                            <p>An Introduction <br>To The Enneagram</p>
-                        </a>
-                    </div>
-                    <div class="book">
-                        <a href="">
+                        <img src="./img/introduction.jpg">
+                        <p>An Introduction <br>To The Enneagram</p>
+                    </a>
+                </div>
+                <div class="book">
+                    <a href="">
+                        <img src="~/img/time management.jpg">
+                        <p>Time Management <br>For Creative People</p>
+                    </a>
+                </div>
+                <div class="book">
+                    <a href="">
+                        <img src="./img/power.jpg">
+                        <p>Power of <br>Self Discipline</p>
 
-                            <img src="~/img/time management.jpg">
-                            <p>Time Management <br>For Creative People</p>
-                        </a>
-                    </div>
-                    <div class="book">
-                        <a href="">
-                            <img src="./img/power.jpg">
-                            <p>Power of <br>Self Discipline</p>
-
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </div>
-
-    </main>
-</body>
-</html>
+        </div>
+        
+</main>
