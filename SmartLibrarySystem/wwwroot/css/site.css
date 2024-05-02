@@ -29,13 +29,13 @@ h1 {
 }
 
 header a {
-    color: white;
+    color: white !important;
     text-decoration: none;
 }
 
-    header a:hover {
-        text-decoration: underline;
-    }
+header a:hover {
+    text-decoration: underline;
+}
 
 header li {
     display: inline;
@@ -71,36 +71,40 @@ h2 {
 .newsletter input, .newsletter {
     background-color: transparent;
     color: white;
-    border: 1px background-color rgba(255, 255, 255, 0.5);
+    border: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 15px;
     border-radius: 10px;
 }
 
 .newsletter {
-    padding: 15px 0;
+    padding: 15px 10px;
     display: flex;
     flex-direction: column;
-    align-items: first baseline;
+    align-items: baseline;
 }
 
-    .newsletter input {
-        width: 300px;
-        margin-right: 10px;
-    }
+.newsletter input {
+    width: 300px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: black;
+}
 
-    .newsletter button {
-        width: 90px;
-        cursor: pointer;
-        height: 30px;
-    }
+.newsletter button {
+    width: 90px;
+    cursor: pointer;
+    height: 30px;
+}
 
 input::placeholder {
-    color: white
+    color: white;
 }
 
 input:focus {
     outline: none;
-    border-color: black
+    border-color: black;
 }
 
 .result h3 {
@@ -117,16 +121,16 @@ input:focus {
     margin-top: 0.5px;
 }
 
-    .book img {
-        height: 200px;
-        width: 200px;
-        margin: 20px;
-    }
+.book img {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
 
 .books {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 3;
+    gap: 3px;
     width: 1000px;
     margin: 0 auto;
 }
@@ -145,7 +149,8 @@ input:focus {
 .letter input, .letter {
     background-color: transparent;
     color: black;
-    border: 1px background-color rgba(255, 255, 255, 0.5);
+    border: 1px;
+    background-color:rgba(255, 255, 255, 0.5) ;
     padding: 15px;
     border-radius: 10px;
 }
@@ -161,20 +166,20 @@ input:focus {
     transform: translateX(-50%); /* 使容器水平居中 */
 }
 
-    .letter p {
-        margin-top: auto; /* 将段落元素向下推到容器的底部 */
-    }
+.letter p {
+    margin-top: auto; /* 将段落元素向下推到容器的底部 */
+}
 
-    .letter input {
-        width: 300px;
-        margin-right: 10px;
-    }
+.letter input {
+    width: 300px;
+    margin-right: 10px;
+}
 
-    .letter button {
-        width: 90px;
-        cursor: pointer;
-        height: 30px;
-    }
+.letter button {
+    width: 90px;
+    cursor: pointer;
+    height: 30px;
+}
 
 input::placeholder {
     color: black
