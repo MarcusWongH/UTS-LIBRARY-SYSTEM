@@ -92,7 +92,7 @@ h2 {
     color: black;
 }
 
-.newsletter button {
+#news-btn {
     width: 90px;
     cursor: pointer;
     height: 30px;
@@ -146,40 +146,6 @@ input:focus {
     margin-top: 200px;
 }
 
-.letter input, .letter {
-    background-color: transparent;
-    color: black;
-    border: 1px;
-    background-color:rgba(255, 255, 255, 0.5) ;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.letter {
-    padding: 15px 0; /* 上下填充为15像素 */
-    display: flex; /* 使用弹性布局 */
-    flex-direction: column; /* 设置为列方向 */
-    align-items: center; /* 项目在交叉轴上的对齐方式 */
-    position: absolute; /* 设置为绝对定位 */
-    bottom: 0; /* 相对于父元素底部定位 */
-    left: 50%; /* 相对于父元素左侧定位 */
-    transform: translateX(-50%); /* 使容器水平居中 */
-}
-
-.letter p {
-    margin-top: auto; /* 将段落元素向下推到容器的底部 */
-}
-
-.letter input {
-    width: 300px;
-    margin-right: 10px;
-}
-
-.letter button {
-    width: 90px;
-    cursor: pointer;
-    height: 30px;
-}
 
 input::placeholder {
     color: black
@@ -190,6 +156,13 @@ input:focus {
     border-color: black
 }
 
-.letter {
-    background-color: #ffffff;
+#aibot {
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+#aibot a{
+    text-decoration: none;
+    color: black;
+    font-size: 
 }

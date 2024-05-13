@@ -3,19 +3,17 @@
 }
 <main>
     <section class="newsletter">
-        <form>
-            <input type="text" placeholder="search by title or author" required>
-            <button type="submit">search</button>
-        </form>
+        <div>
+            <input type="text" placeholder="search by title or author" required id="search">
+            <button onclick="searchByAuthor()" id="news-btn">search</button>
+            <button id="aibot">
+              <a href="https://app.fastbots.ai/embed/clvx6k30s00dqohbaek7ps13f" target="_blank">
+                    Come with our AI Chatbot for more information
+              </a>
+            </button>
+        </div>
     </section>
     <dic>
-
-        <div class="letter">
-            <form>
-                <input type="text" placeholder="MESSAGE LIBRARY SYSTEM..." required>
-                <button type="submit">search</button>
-            </form>
-        </div>
         <div class="result">
             <h3>TOP INTERESTING</h3>
             <div class="books">
@@ -53,5 +51,5 @@
 
             </div>
         </div>
-        
+
 </main>
