@@ -1,4 +1,4 @@
-﻿// Encapsulation: Binding data and functions into a single unit (class)
+// Encapsulation: Binding data and functions into a single unit (class)
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -17,13 +17,30 @@ class Library {
   }
 
   addBook(book) {
-    this.books.push(book);
+      // Polymorphism: Allowing objects of different classes to be treated as objects of a common superclass
+      if (book instanceof Book) {
+          this.books.push(book);
+      } else {
+          throw new Error("Invalid book object");
+      }
   }
 
   searchByAuthor(author) {
       return this.books.filter((book) => book.author.toLowerCase().includes(author.toLowerCase()));
   }
 }
+// Derived class for physical books
+class PhysicalBook extends Book {
+    constructor(title, author, isbn) {
+        super(title, author);
+        this.isbn = isbn;
+    }
+
+    toString() {
+        return `${super.toString()} (ISBN: ${this.isbn})`;
+    }
+}
+
 
 // Inheritance: Creating a new class from an existing class
 class EBook extends Book {
